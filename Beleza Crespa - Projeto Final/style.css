@@ -467,3 +467,115 @@ button {
   width: 100%;
  bottom: 0; 
 }
+/* Responsividade geral para telas menores que 1024px */
+@media (max-width: 1024px) {
+  .content-section,
+  .section,
+  .cuidados-tratamentos,
+  .contato-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image img,
+  .imagem-tratamento img {
+    max-width: 100%;
+  }
+
+  .logo-container {
+    position: static;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .linha-vertical {
+    display: none; /* esconde a linha vertical no mobile */
+  }
+
+  .sobre-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .form-container,
+  .contato-form,
+  .contato-info-imagem {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .contato-info-imagem {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+/* Responsividade extra para telas menores que 768px */
+@media (max-width: 768px) {
+  h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  .text h2, .text h3 {
+    font-size: 1.2rem;
+  }
+
+  .produtos-intro h2 {
+    font-size: 1.6rem;
+  }
+
+  .rede-social img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .galeria img {
+    width: 100%;
+    max-width: 160px;
+  }
+
+  .beneficio {
+    padding: 15px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  .botao-voltar {
+    padding: 0.4rem 0.8rem;
+    font-size: 14px;
+  }
+}
+
+/* Ajustes para telas muito pequenas (celulares pequenos) */
+@media (max-width: 480px) {
+  .text p,
+  .section .text p,
+  .produtos-intro p,
+  .contato-section p,
+  .texto-revolucao {
+    font-size: 0.95rem;
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .beneficio h4 {
+    font-size: 1rem;
+  }
+
+  .rede-social p {
+    font-size: 0.9rem;
+  }
+}
