@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Agendamento | Beleza Crespa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+     <div class="logo-container">
+      <img src="img/logo cachos.png" alt="Logo Beleza Crespa" class="logo" />
+    </div>
+    <h1>Agende seu Horário</h1>
+    <nav>
+      <ul>
+         <li><a href="index.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="agendamento.html">Agendamento</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form>
+        <p>Escolha o serviço desejado e o melhor horário para você!</p>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required>
+
+      <label for="data">Data:</label>
+      <input type="date" id="data" required>
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" required>
+
+      <label for="servico">Serviço:</label>
+      <select id="servico">
+        <option>Hidratação</option>
+        <option>Transição Capilar</option>
+        <option>Corte</option>
+        <option>Finalização</option>
+        <option>Coloração</option>
+        <option>Sof Dread</option>
+        <option>Entrelace</option>
+        <option>Box Braids</option>
+      </select>
+      <button type="submit">Agendar</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 Beleza Crespa - Com Direitos Autorais - Bell Santos</p>
+  </footer>
+
+  <!-- VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>
