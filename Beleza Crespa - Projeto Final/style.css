@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #1a0d22;
+  background-color: #1a0d22;;
   color: #333333;
 }
 
@@ -11,7 +11,6 @@ header {
   padding: 1rem;
   text-align: center;
 }
-
 .logo-container {
   position: absolute;
   top: 10px;
@@ -19,7 +18,7 @@ header {
 }
 
 .logo {
-  height: 130px;
+  height: 130px; /* Tamanho menor da logo */
   width: auto;
 }
 
@@ -43,6 +42,7 @@ main {
   padding: 2rem;
 }
 
+/* Centralizar títulos */
 h2, h3 {
   text-align: center;
   font-weight: bold;
@@ -126,7 +126,7 @@ footer {
 }
 
 .produtos-intro p {
-  text-align: center;
+  text-align: center; 
   max-width: 800px;
   margin: 0 auto 40px;
 }
@@ -204,23 +204,24 @@ footer {
 .sobre-container {
   background-color: #1d102d;
   color: #ffffff;
-  padding: 20px 60px 40px 60px;
+  padding: 20px 60px 40px 60px; /* padding-top menor (antes era 40px) */
   font-family: 'Arial', sans-serif;
+}
+.sobre-container {
   display: flex;
-  align-items: flex-start;
-  gap: 15px;
+  align-items: flex-start; /* alinha topo do texto e da linha */
+  gap: 15px; /* espaço entre a linha e o texto */
 }
 
 .linha-vertical {
-  width: 3px;
-  background-color: white;
-  height: 100%;
-  min-height: 150px;
+  width: 3px;           /* largura da linha */
+  background-color: white; /* cor da linha */
+  height: 100%;         /* altura da linha: ajuste conforme o conteúdo */
+  min-height: 150px;    /* ou altura fixa mínima */
 }
-
 .section {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start; /* Alinha o texto e imagem no topo */
   justify-content: space-between;
   margin-bottom: 60px;
   gap: 40px;
@@ -242,7 +243,7 @@ footer {
   font-size: 1.1em;
   line-height: 1.2;
   margin-bottom: 5px;
-  color: #ffffff;
+  color: #ffffff; /* Parágrafos em branco */
 }
 
 .section .image {
@@ -280,14 +281,14 @@ input, select {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
-  border: 1px solid #d50741;
+  border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 button {
   margin-top: 20px;
   width: 100%;
-  background-color: #1b0e34;
+  background-color: #fea1d2;
   color: white;
   border: none;
   padding: 12px;
@@ -304,6 +305,31 @@ form {
   border-radius: 10px;
 }
 
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #d50741;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #1b0e34;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .contato-section {
   background-color: #1b0e34;
   color: white;
@@ -314,7 +340,7 @@ form {
 .contato-section h2 {
   font-size: 2.2rem;
   margin-bottom: 15px;
-  color: #f25a75;
+  color: #f25a75; /* rosa/laranja */
   font-weight: bold;
 }
 
@@ -361,7 +387,80 @@ form {
   color: white;
   font-size: 1.1rem;
   cursor: pointer;
-  transition: background-color 0.
+  transition: background-color 0.3s ease;
+}
+
+.contato-form button:hover {
+  background-color: #d13f5e;
+}
+
+.contato-info-imagem {
+  flex: 1;
+  min-width: 300px;
+  border-left: 3px solid white;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  color: white;
+}
+
+.contato-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  width: 100%;
+}
+
+.contato-info li {
+  margin-bottom: 10px;
+}
+
+.contato-info-imagem img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.texto-revolucao {
+  margin-top: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f3dcdc;
+  text-align: center;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.rede-social {
+  text-align: center;
+  color: rgb(250, 247, 249);
+  max-width: 150px;
+}
+
+.rede-social img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.rede-social p {
+  margin: 5px 0;
+  font-weight: 600;
+  font-size: 1rem;
 }
 .f1{
   position: fixed;
